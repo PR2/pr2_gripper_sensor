@@ -2,5 +2,5 @@
 Changelog for package pr2_gripper_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2014-09-10)
+------------------
