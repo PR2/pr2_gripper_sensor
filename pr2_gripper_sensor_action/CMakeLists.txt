@@ -5,6 +5,14 @@ project(pr2_gripper_sensor_action)
 # Load catkin and all dependencies required for this package
 # TODO: remove all from COMPONENTS that are not catkin packages.
 find_package(catkin REQUIRED COMPONENTS roscpp actionlib_msgs actionlib pr2_gripper_sensor_msgs pr2_mechanism_controllers robot_mechanism_controllers pr2_controllers_msgs pr2_mechanism_model pr2_gripper_sensor_controller pr2_machine message_generation)
+# catkin_package parameters: http://ros.org/doc/groovy/api/catkin/html/dev_guide/generated_cmake_api.html#catkin-package
+# TODO: fill in what other packages will need to use this package
+catkin_package(
+    DEPENDS roscpp actionlib_msgs actionlib pr2_gripper_sensor_msgs pr2_mechanism_controllers robot_mechanism_controllers pr2_controllers_msgs pr2_mechanism_model pr2_gripper_sensor_controller pr2_machine message_runtime
+    CATKIN_DEPENDS  # TODO
+    INCLUDE_DIRS  ${catkin_INCLUDE_DIRS}# TODO include
+    LIBRARIES # TODO
+)
 
 # include_directories(include ${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
 # CATKIN_MIGRATION: removed during catkin migration
@@ -100,13 +108,3 @@ target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES} ${catkin_LIBRARIES})
 #add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
 ## Generate added messages and services with any dependencies listed here
-
-# catkin_package parameters: http://ros.org/doc/groovy/api/catkin/html/dev_guide/generated_cmake_api.html#catkin-package
-# TODO: fill in what other packages will need to use this package
-catkin_package(
-    DEPENDS roscpp actionlib_msgs actionlib pr2_gripper_sensor_msgs pr2_mechanism_controllers robot_mechanism_controllers pr2_controllers_msgs pr2_mechanism_model pr2_gripper_sensor_controller pr2_machine message_runtime
-    CATKIN_DEPENDS  # TODO
-    INCLUDE_DIRS  ${catkin_INCLUDE_DIRS}# TODO include
-    LIBRARIES # TODO
-)
-
