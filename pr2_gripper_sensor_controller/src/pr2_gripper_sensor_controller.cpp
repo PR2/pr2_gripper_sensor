@@ -134,6 +134,8 @@ bool PR2GripperSensorController::initializeHandles(pr2_mechanism_model::RobotSta
     ROS_ERROR("PR2GripperSensorController could not find joint named '%s'", joint_name.c_str());
     return false;
   }
+
+  n.param("publish_skip", publish_skip, 1);
   
   // instantiate our gripper action object and pass it handles to our joint_state_controller and observer objects
   myGripperController = new gripperController(joint_state_, myPressureObserver, myAccelerationObserver);
@@ -413,7 +415,7 @@ void PR2GripperSensorController::update()
   //  Begin Feedback publication
 
   // publish information every nth cycle
-  if(loop_count_ % 1 == 0)
+  if(loop_count_ % publish_skip == 0)
   {
       if(controller_state_publisher_ && controller_state_publisher_->trylock())
       {
@@ -487,7 +489,7 @@ void PR2GripperSensorController::update()
   }
 
   // publish information every nth cycle
-  if(loop_count_ % 1 == 0)
+  if(loop_count_ % publish_skip == 0)
   {
     if(publish_raw_data)
     {
