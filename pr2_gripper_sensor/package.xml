@@ -41,12 +41,11 @@
   <buildtool_depend>catkin</buildtool_depend>
 
 
+  <run_depend>pr2_gripper_sensor_action</run_depend>
+  <run_depend>pr2_gripper_sensor_controller</run_depend>
+  <run_depend>pr2_gripper_sensor_msgs</run_depend>
   <!-- The export tag contains other, unspecified, tags -->
   <export>
-    <!-- You can specify that this package is a metapackage here: -->
-    <!-- <metapackage/> -->
-
-    <!-- Other tools can request additional information be placed here -->
-
+      <metapackage/>
   </export>
 </package>
