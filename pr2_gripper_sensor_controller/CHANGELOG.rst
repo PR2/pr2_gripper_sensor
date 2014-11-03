@@ -2,6 +2,11 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added dependency on rosrt library and updated the CMake structure
+* Contributors: TheDash
+
 1.0.3 (2014-09-18)
 ------------------
 
