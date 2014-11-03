@@ -31,11 +31,6 @@ link_directories(${catkin_INCLUDE_DIRS})
 # CATKIN_MIGRATION: removed during catkin migration
 # rosbuild_init()
 
-#set the default path for built executables to the "bin" directory
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-#set the default path for built libraries to the "lib" directory
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
-
 #uncomment if you have defined messages
 #add_message_files(
 #uncomment if you have defined services
@@ -51,13 +46,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 #target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
 #add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
-add_library(pr2_gripper_sensor_controller_lib src/digitalFilter.cpp
-                                             src/pr2_gripper_sensor_controller.cpp
-                                             src/pressure_observer.cpp
-                                             src/acceleration_observer.cpp)
-
-target_link_libraries(pr2_gripper_sensor_controller_lib ${catkin_LIBRARIES})
-add_dependencies(pr2_gripper_sensor_controller_lib ${catkin_EXPORTED_TARGETS})
 
 ## Generate added messages and services with any dependencies listed here
 
@@ -69,4 +57,12 @@ catkin_package(
     INCLUDE_DIRS include # TODO include
     LIBRARIES # TODO
 )
+
+add_library(pr2_gripper_sensor_controller_lib src/digitalFilter.cpp
+                                             src/pr2_gripper_sensor_controller.cpp
+                                             src/pressure_observer.cpp
+                                             src/acceleration_observer.cpp)
+
+target_link_libraries(pr2_gripper_sensor_controller_lib ${catkin_LIBRARIES})
+add_dependencies(pr2_gripper_sensor_controller_lib ${catkin_EXPORTED_TARGETS} rosrt rosrt_EXPORTED_TARGETS)
 
