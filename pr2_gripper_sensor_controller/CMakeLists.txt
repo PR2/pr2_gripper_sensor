@@ -26,7 +26,6 @@ find_package(catkin REQUIRED COMPONENTS pr2_controller_interface pr2_mechanism_m
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 include_directories(include ${Boost_INCLUDE_DIRS})
-link_directories(${catkin_INCLUDE_DIRS})
 
 # CATKIN_MIGRATION: removed during catkin migration
 # rosbuild_init()
