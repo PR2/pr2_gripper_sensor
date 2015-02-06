@@ -2,8 +2,8 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.5 (2015-02-06)
+------------------
 * Removed the lib dir from sensor_controller
 * Add publish_skip parameter to supress high-frequency publishing of gripper sensor data
 * Contributors: Ryohei Ueda, TheDash
