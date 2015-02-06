@@ -2,6 +2,9 @@
 Changelog for package pr2_gripper_sensor_action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.0.4 (2014-11-03)
 ------------------
 * Fix location of catkin_package to build binary at correct directory

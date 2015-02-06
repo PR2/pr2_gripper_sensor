@@ -2,6 +2,9 @@
 Changelog for package pr2_gripper_sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.0.4 (2014-11-03)
 ------------------
 * Added dependency on rosrt library and updated the CMake structure
