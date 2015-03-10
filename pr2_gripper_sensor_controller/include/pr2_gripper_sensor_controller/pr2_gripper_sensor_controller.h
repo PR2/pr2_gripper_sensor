@@ -103,6 +103,7 @@ private:
   double slip_trigger;     ///< value to use as trigger for slip detection (event_detector)
   bool stable_force;       ///< flag to indicate a stable force is achieved
   int findContact_delay;   ///< counter to track how long a force is stable for
+  int publish_skip;            ///< skip count when publishing controller information
 
   // state variables about our controller
   int control_mode;        ///< the current/desired control mode we want the controller state machine to be in
