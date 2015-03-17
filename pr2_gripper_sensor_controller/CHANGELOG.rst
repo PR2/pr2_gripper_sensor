@@ -2,6 +2,12 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* install controller_plugins.xml
+* add install settings for catkin_make pr2_gripper_sensor_controller
+* Contributors: John Hsu, Yuki Furuta
+
 1.0.5 (2015-02-06)
 ------------------
 * Removed the lib dir from sensor_controller
