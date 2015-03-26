@@ -30,5 +30,5 @@ install(TARGETS pr2_gripper_sensor_controller_lib
 install(FILES controller_plugins.xml
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
-install(DIRECTORY include/${PROJECT_NAME}/
+install(DIRECTORY launch include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
