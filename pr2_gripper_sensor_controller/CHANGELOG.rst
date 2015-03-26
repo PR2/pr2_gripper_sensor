@@ -2,6 +2,11 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added launch file install
+* Contributors: TheDash
+
 1.0.6 (2015-03-17)
 ------------------
 * install controller_plugins.xml
