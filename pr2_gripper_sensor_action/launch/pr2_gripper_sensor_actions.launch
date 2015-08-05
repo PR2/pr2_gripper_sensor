@@ -3,7 +3,7 @@
   <arg name="use_left_arm" default="true" />
 
   <!-- What does this do? is it necessary? -->
-  <include file="$(find pr2_machine)/pr2.machine" />
+  <include file="$(find pr2_machine)/$(optenv ROBOT pr2).machine" />
 
   <!-- launch real-time controller for both hands -->
   <include file="$(find pr2_gripper_sensor_controller)/launch/pr2_gripper_sensor_controller.launch" >
