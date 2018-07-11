@@ -2,8 +2,8 @@
 Changelog for package pr2_gripper_sensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.10 (2018-07-12)
+-------------------
 * Merge pull request `#14 <https://github.com/pr2/pr2_gripper_sensor/issues/14>`_ from PR2/fix_maintainer
   change maintainer to ros-orphaned-packages@googlegroups.com
 * set license of pr2_gripper_sensor to BSD
