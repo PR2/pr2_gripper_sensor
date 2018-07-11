@@ -2,6 +2,16 @@
 Changelog for package pr2_gripper_sensor_action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#14 <https://github.com/pr2/pr2_gripper_sensor/issues/14>`_ from PR2/fix_maintainer
+  change maintainer to ros-orphaned-packages@googlegroups.com
+* change maintainer to ros-orphaned-packages@googlegroups.com
+* Merge pull request `#10 <https://github.com/pr2/pr2_gripper_sensor/issues/10>`_ from furushchev/use-env
+  [pr2_gripper_sensor_action] use optenv instead of direct use pr2.machine in launch
+* use optenv instead of direct use pr2.machine
+* Contributors: Devon Ash, Kei Okada, Yuki Furuta
+
 1.0.9 (2015-06-22)
 ------------------
 

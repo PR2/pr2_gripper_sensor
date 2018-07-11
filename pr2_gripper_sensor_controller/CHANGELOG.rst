@@ -2,6 +2,21 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#14 <https://github.com/pr2/pr2_gripper_sensor/issues/14>`_ from PR2/fix_maintainer
+  change maintainer to ros-orphaned-packages@googlegroups.com
+* change maintainer to ros-orphaned-packages@googlegroups.com
+* Merge pull request `#11 <https://github.com/pr2/pr2_gripper_sensor/issues/11>`_ from archielee/hydro-devel
+  Removed lines in each yaml file relating to a controller for the othe…
+* Removed lines in each yaml file relating to a controller for the other side
+* Forgot word
+* Added include destinatoin
+* removed unnec
+* revert
+* Fixed lib path
+* Contributors: Archie Lee, Kei Okada, TheDash, archielee
+
 1.0.9 (2015-06-22)
 ------------------
 
