@@ -1,5 +1,5 @@
  l_gripper_sensor_controller:
-    type: PR2GripperSensorController
+    type: pr2_gripper_sensor_controller/PR2GripperSensorController
     joint_name: l_gripper_joint
     accelerometer_name: l_gripper_motor
     left_pressure_sensor_name: l_gripper_motorl_finger_tip
@@ -16,7 +16,7 @@
     position_servo_position_tolerance: 0.01
     position_open: 0.09
  r_gripper_sensor_controller:
-    type: PR2GripperSensorController
+    type: pr2_gripper_sensor_controller/PR2GripperSensorController
     joint_name: r_gripper_joint
     accelerometer_name: r_gripper_motor
     left_pressure_sensor_name: r_gripper_motorl_finger_tip
