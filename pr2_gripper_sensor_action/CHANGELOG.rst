@@ -2,6 +2,9 @@
 Changelog for package pr2_gripper_sensor_action
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.0.10 (2018-07-12)
 -------------------
 * Merge pull request `#14 <https://github.com/pr2/pr2_gripper_sensor/issues/14>`_ from PR2/fix_maintainer
