@@ -2,8 +2,8 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.11 (2020-03-31)
+-------------------
 * add namespaces to avoid warning (`#15 <https://github.com/PR2/pr2_gripper_sensor/issues/15>`_)
   [ WARN] [/realtime_loop]:
   The deprecated controller type PR2GripperSensorController was not found.
