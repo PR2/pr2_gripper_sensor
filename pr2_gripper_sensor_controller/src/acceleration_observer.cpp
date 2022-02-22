@@ -115,7 +115,9 @@ accelerationObserver::accelerationObserver(pr2_hardware_interface::Accelerometer
 // destructor
 accelerationObserver::~accelerationObserver()
 {
-  delete[] accBPFilt;
-  delete[] accLPFilt;
+  for(int i = 0; i < 3; ++i){
+    delete accBPFilt[i];
+    delete accLPFilt[i];
+  }
 }
 

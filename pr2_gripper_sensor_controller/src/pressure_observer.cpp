@@ -382,6 +382,8 @@ pressureObserver::pressureObserver(pr2_hardware_interface::PressureSensor* left,
 // destructor
 pressureObserver::~pressureObserver()
 {
-  delete[] pressureLFFilt_left;
-  delete[] pressureLFFilt_right;
+  for( int i = 0; i < 22; ++i){
+    delete pressureLFFilt_left[i];
+    delete pressureLFFilt_right[i];
+  }
 }
