@@ -2,8 +2,8 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.12 (2022-10-15)
+-------------------
 * fix error reported by clang 13
 * Contributors: v4hn
 
