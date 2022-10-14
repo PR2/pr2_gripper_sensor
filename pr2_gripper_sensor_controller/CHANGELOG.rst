@@ -2,6 +2,11 @@
 Changelog for package pr2_gripper_sensor_controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix error reported by clang 13
+* Contributors: v4hn
+
 1.0.11 (2020-03-31)
 -------------------
 * add namespaces to avoid warning (`#15 <https://github.com/PR2/pr2_gripper_sensor/issues/15>`_)

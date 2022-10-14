@@ -2,6 +2,9 @@
 Changelog for package pr2_gripper_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.0.11 (2020-03-31)
 -------------------
 
