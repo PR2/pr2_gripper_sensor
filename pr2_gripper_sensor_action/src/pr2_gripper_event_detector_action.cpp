@@ -51,8 +51,8 @@ public:
   Pr2GripperEventDetector(ros::NodeHandle &n) :
     node_(n),
     action_server_(node_, "event_detector",
-                   boost::bind(&Pr2GripperEventDetector::goalCB, this, _1),
-                   boost::bind(&Pr2GripperEventDetector::cancelCB, this, _1)),
+                   boost::bind(&Pr2GripperEventDetector::goalCB, this, boost::placeholders::_1),
+                   boost::bind(&Pr2GripperEventDetector::cancelCB, this, boost::placeholders::_1)),
     has_active_goal_(false)
   {
     ros::NodeHandle pn("~");

@@ -51,8 +51,8 @@ public:
   Pr2GripperForceServo(ros::NodeHandle &n) :
     node_(n),
     action_server_(node_, "force_servo",
-                   boost::bind(&Pr2GripperForceServo::goalCB, this, _1),
-                   boost::bind(&Pr2GripperForceServo::cancelCB, this, _1)),
+                   boost::bind(&Pr2GripperForceServo::goalCB, this, boost::placeholders::_1),
+                   boost::bind(&Pr2GripperForceServo::cancelCB, this, boost::placeholders::_1)),
     has_active_goal_(false)
   {
     ros::NodeHandle pn("~");
